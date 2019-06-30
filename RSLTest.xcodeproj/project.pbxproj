@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		FF06EAF822C8B9F900D06FDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06EAF722C8B9F900D06FDD /* AppDelegate.swift */; };
-		FF06EAFA22C8B9F900D06FDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06EAF922C8B9F900D06FDD /* ViewController.swift */; };
+		FF06EAFA22C8B9F900D06FDD /* OrderHistoryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06EAF922C8B9F900D06FDD /* OrderHistoryListVC.swift */; };
 		FF06EAFD22C8B9F900D06FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF06EAFB22C8B9F900D06FDD /* Main.storyboard */; };
 		FF06EAFF22C8B9FB00D06FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF06EAFE22C8B9FB00D06FDD /* Assets.xcassets */; };
-		FF06EB0222C8B9FB00D06FDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF06EB0022C8B9FB00D06FDD /* LaunchScreen.storyboard */; };
+		FF06EB0D22C8BA7500D06FDD /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06EB0C22C8BA7500D06FDD /* Models.swift */; };
+		FF06EB0F22C8BE8100D06FDD /* OrederListCustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06EB0E22C8BE8100D06FDD /* OrederListCustomTableCell.swift */; };
+		FF06EB1122C8D22300D06FDD /* OrderDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06EB1022C8D22300D06FDD /* OrderDetailsVC.swift */; };
+		FF06EB1422C8D83400D06FDD /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06EB1322C8D83400D06FDD /* ApiCall.swift */; };
+		FF06EB1722C8E98500D06FDD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06EB1622C8E98500D06FDD /* Extensions.swift */; };
+		FF8B9F5522C903450079E285 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8B9F5422C903450079E285 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FF06EAF422C8B9F900D06FDD /* RSLTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSLTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF06EAF722C8B9F900D06FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF06EAF922C8B9F900D06FDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF06EAF922C8B9F900D06FDD /* OrderHistoryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryListVC.swift; sourceTree = "<group>"; };
 		FF06EAFC22C8B9F900D06FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF06EAFE22C8B9FB00D06FDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FF06EB0122C8B9FB00D06FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF06EB0322C8B9FB00D06FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF06EB0C22C8BA7500D06FDD /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		FF06EB0E22C8BE8100D06FDD /* OrederListCustomTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrederListCustomTableCell.swift; sourceTree = "<group>"; };
+		FF06EB1022C8D22300D06FDD /* OrderDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsVC.swift; sourceTree = "<group>"; };
+		FF06EB1322C8D83400D06FDD /* ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
+		FF06EB1622C8E98500D06FDD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FF8B9F5422C903450079E285 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,59 @@
 		FF06EAF622C8B9F900D06FDD /* RSLTest */ = {
 			isa = PBXGroup;
 			children = (
-				FF06EAF722C8B9F900D06FDD /* AppDelegate.swift */,
-				FF06EAF922C8B9F900D06FDD /* ViewController.swift */,
+				FF06EB1522C8E96E00D06FDD /* AppUtility */,
+				FF06EB1222C8D81100D06FDD /* APICall */,
+				FF06EB0B22C8BA3700D06FDD /* View */,
+				FF06EB0A22C8BA2500D06FDD /* Contollers */,
+				FF06EB0922C8BA1800D06FDD /* Models */,
 				FF06EAFB22C8B9F900D06FDD /* Main.storyboard */,
 				FF06EAFE22C8B9FB00D06FDD /* Assets.xcassets */,
-				FF06EB0022C8B9FB00D06FDD /* LaunchScreen.storyboard */,
 				FF06EB0322C8B9FB00D06FDD /* Info.plist */,
+				FF06EAF722C8B9F900D06FDD /* AppDelegate.swift */,
+				FF8B9F5422C903450079E285 /* Launch Screen.storyboard */,
 			);
 			path = RSLTest;
+			sourceTree = "<group>";
+		};
+		FF06EB0922C8BA1800D06FDD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF06EB0C22C8BA7500D06FDD /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF06EB0A22C8BA2500D06FDD /* Contollers */ = {
+			isa = PBXGroup;
+			children = (
+				FF06EAF922C8B9F900D06FDD /* OrderHistoryListVC.swift */,
+				FF06EB1022C8D22300D06FDD /* OrderDetailsVC.swift */,
+			);
+			path = Contollers;
+			sourceTree = "<group>";
+		};
+		FF06EB0B22C8BA3700D06FDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF06EB0E22C8BE8100D06FDD /* OrederListCustomTableCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF06EB1222C8D81100D06FDD /* APICall */ = {
+			isa = PBXGroup;
+			children = (
+				FF06EB1322C8D83400D06FDD /* ApiCall.swift */,
+			);
+			path = APICall;
+			sourceTree = "<group>";
+		};
+		FF06EB1522C8E96E00D06FDD /* AppUtility */ = {
+			isa = PBXGroup;
+			children = (
+				FF06EB1622C8E98500D06FDD /* Extensions.swift */,
+			);
+			path = AppUtility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF06EB0222C8B9FB00D06FDD /* LaunchScreen.storyboard in Resources */,
+				FF8B9F5522C903450079E285 /* Launch Screen.storyboard in Resources */,
 				FF06EAFF22C8B9FB00D06FDD /* Assets.xcassets in Resources */,
 				FF06EAFD22C8B9F900D06FDD /* Main.storyboard in Resources */,
 			);
@@ -135,8 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF06EAFA22C8B9F900D06FDD /* ViewController.swift in Sources */,
+				FF06EB1122C8D22300D06FDD /* OrderDetailsVC.swift in Sources */,
+				FF06EB1422C8D83400D06FDD /* ApiCall.swift in Sources */,
+				FF06EB0D22C8BA7500D06FDD /* Models.swift in Sources */,
+				FF06EAFA22C8B9F900D06FDD /* OrderHistoryListVC.swift in Sources */,
+				FF06EB0F22C8BE8100D06FDD /* OrederListCustomTableCell.swift in Sources */,
 				FF06EAF822C8B9F900D06FDD /* AppDelegate.swift in Sources */,
+				FF06EB1722C8E98500D06FDD /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,14 +209,6 @@
 				FF06EAFC22C8B9F900D06FDD /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FF06EB0022C8B9FB00D06FDD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF06EB0122C8B9FB00D06FDD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
